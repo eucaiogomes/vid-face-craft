@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SkipBack, Play, SkipForward, Volume2, Maximize2, Scissors, Undo2, Redo2, Film, ZoomIn, ZoomOut, Video, Image as ImageIcon, Volume2 as Vol, Layout } from "lucide-react";
+import { SkipBack, Play, SkipForward, Volume2, Maximize2, Scissors, Undo2, Redo2, Film, ZoomIn, ZoomOut, Video, Image as ImageIcon, Layout } from "lucide-react";
 import Webcam from "@/components/Webcam";
 import SlidePreview from "@/components/SlidePreview";
 import { BottomBar } from "@/components/TopBar";
@@ -57,7 +57,7 @@ export default function EditView({ onMode, chaptersOpen, setChaptersOpen }: { on
         {[
           { icon: Video, label: "Vídeo" },
           { icon: ImageIcon, label: "Slides" },
-          { icon: Vol, label: "Áudio" },
+          { icon: Volume2, label: "Áudio" },
           { icon: Layout, label: "Layout" },
         ].map(({ icon: Icon, label }) => (
           <div key={label} className="flex items-center">
